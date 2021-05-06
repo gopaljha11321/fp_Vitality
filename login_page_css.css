@@ -1,0 +1,66 @@
+body
+{
+ background-image:url(main1.jpg);
+ color:white;
+
+}
+#main {
+    height:400px;
+    width:350px;
+    left:35%;
+    padding: 50px;
+    top:20%;
+    background:white;
+    opacity: 0.5;
+    position:absolute;
+    text-align: center;
+    
+}
+.main2{
+    height:400px ;
+    top: 20%;
+    left: 35%;
+    background-color:transparent;
+    position:absolute;
+    margin :50px;
+    text-align:center
+}
+.main2 input[type="text"],.main2 input[type="password"]
+{
+    border:0;
+
+    border:2px solid skyblue;
+    text-align: center;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.125s;
+    width:200px;
+   
+
+
+}
+.main2 input[type="text"]:hover,.main2 input[type="password"]:hover
+{
+    width:300px;
+    border-color: green;
+    background-color: aquamarine;
+}
+.main2 input[type="submit"]
+{
+    border:0;
+
+    border:2px solid skyblue;
+    text-align: center;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.125s;
+    width:150px;
+
+ 
+}
+.main2 input[type="submit"]:hover{
+    background-color: green;
+}
+
