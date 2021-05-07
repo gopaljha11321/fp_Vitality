@@ -1,0 +1,83 @@
+<?php
+$host="localhost";
+$user="id16761678_vitality";
+$password="Mait@00714807320";
+$db="id16761678_vitality";
+mysql_connect($host,$user,$password);
+$mysql_select_db($db);
+if(isset($_POST['username']))
+{
+    $uname=$_POST['username'];
+    $password=$_POST['password'];
+    $sql="select * from loginform where user='".$uname."'AND Pass='".&password."'
+    limit 1";
+    $result=mysql_query($sql);
+    if(musql_num_rows($result)==1){
+       echo " You Have Succesfully Logged in";
+       exit();
+    }
+    else{
+        echo "You Have Enter Incorrect Possword"
+    }
+}
+
+?>
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="Test/html" character="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link  rel="stylesheet" href="login_page_css.css">
+
+        <title>Vitality</title>
+    </head>
+   
+    <body>
+        <div id="main"></div>
+            <span class="main2">
+        <form method="post" action="#" >
+            <table border="0px" height="400" width="350" >
+            <tr>
+                <td><br>
+                    <img src="logo.jpg"height="50px">
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="username" maxlength="50"placeholder="Username">
+                    
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <input type="password" id="password" maxlength="50" placeholder="Password">
+                        </td>
+                    </tr>
+                            <tr>
+                                <td><button type="button"  onclick="getInfo()">Login</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td><div id ="access"> </div>
+
+                                </td>
+                                
+                            </tr>
+                        </span>
+
+        
+        </table>
+        </form>
+
+        </div>
+                
+
+        
+
+        </form>
+        <div id="vitality">VITALITY</div>    
+    </body>
+    <script src="login.js"></script>
+</html>
