@@ -1,0 +1,60 @@
+body{
+    background-image: url(bgmain.png);
+    
+}
+#bgmain
+{
+    top:2px;
+    position:absolute;
+    left: 53px;;
+}
+#icon
+{
+    
+    position:absolute;
+    top:250px;
+    left:5px;
+}
+#footer{
+    height: 80px;
+    width:100%;
+    background-color:skyblue;
+    position:absolute;
+    left:0%;
+    top:100%;
+    text-align: center;
+    COLOR:WHITE
+    
+
+
+}
+#vit
+{
+    color:black;
+    text-transform: uppercase;
+    position:absolute;
+    top:195px;
+    left:90px;
+    font-weight: bolder;
+    background-color:aquamarine;
+
+
+}
+#vit:hover{
+    color:red;
+    background-color:transparent ;
+}
+#font:hover{
+    color:red;
+    background-color:transparent ;
+}
+#font{
+    color:blue;
+}
+#iframe{
+    position:absolute;
+    top:10px;
+    left:400px;
+    border:solid,black;
+    
+}
