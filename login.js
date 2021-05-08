@@ -27,7 +27,7 @@ if(username==objpeople[i].username && password==objpeople[i].password  )
     console.log("dcndjcmdc")
     inn= "Welcome"+" "+username+"!!";
     a.innerHTML=inn;
-    window.location="https://gopaljha11321.github.io/css-1/"
+    window.location="landingpage.html";
     return;
 }
  
