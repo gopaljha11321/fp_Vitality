@@ -5,10 +5,13 @@ header("Content-Type: application/json; charset=UTF-8");
 $response = array();
  
 // Check if we got the field from the user
-if (isset($_GET['temp']) && isset($_GET['hum'])) {
+if (isset($_GET['temp']) && isset($_GET['hum']) && isset($_GET['heart']) && isset($_GET['body']) && isset($_GET['oxygen'])) {
  
     $temp = $_GET['temp'];
     $hum = $_GET['hum'];
+    $body = $_GET['body'];
+    $heart =$_GET['heart'];
+    $oxygen=$_GET['oxygen'];
  
     // Include data base connect class
     $filepath = realpath (dirname(__FILE__));
@@ -18,7 +21,7 @@ if (isset($_GET['temp']) && isset($_GET['hum'])) {
     $db = new DB_CONNECT();
  
     // Fire SQL query to insert data in weather
-    $result = mysql_query("INSERT INTO weather(temp,hum) VALUES('$temp','$hum')");
+    $result = mysql_query("INSERT INTO weather(temp,hum,body,heart,oxygen) VALUES('$temp','$hum','$body','$heart','$oxygen')");
  
     // Check for succesfull execution of query
     if ($result) {
