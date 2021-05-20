@@ -27,7 +27,7 @@ if(username==objpeople[i].username && password==objpeople[i].password  )
     console.log("dcndjcmdc")
     inn= "Welcome"+" "+username+"!!";
     a.innerHTML=inn;
-    window.location="https://vitality100.000webhostapp.com/site/index.html";
+    window.location="https://vitality100.000webhostapp.com";
     return;
 }
  
