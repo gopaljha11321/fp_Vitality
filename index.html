@@ -1,4 +1,27 @@
+<?php
+$host="localhost";
+$user="id16761678_vitality";
+$password="Mait@00714807320";
+$db="id16761678_vitality";
+mysql_connect($host,$user,$password);
+$mysql_select_db($db);
+if(isset($_POST['username']))
+{
+    $uname=$_POST['username'];
+    $password=$_POST['password'];
+    $sql="select * from loginform where user='".$uname."'AND Pass='".&password."'
+    limit 1";
+    $result=mysql_query($sql);
+    if(musql_num_rows($result)==1){
+       echo " You Have Succesfully Logged in";
+       exit();
+    }
+    else{
+        echo "You Have Enter Incorrect Possword"
+    }
+}
 
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
