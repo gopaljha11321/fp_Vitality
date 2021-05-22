@@ -18,12 +18,13 @@ To overcome this problem we have created a IOT product named VITALITY- Low cost 
 * Cost For the project would be incredibly less.
 
 Hardware and Software Requirements :
-Hardware :-
+Hardware :
 > NodeMcu(Esp8266);
 > Max30102; 
 > ds18b20;
 > DHT11;
-Software :-
+
+Software :
 >c++;
 >php;
 >mysql;
