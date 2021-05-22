@@ -25,14 +25,16 @@ Hardware :
 > DHT11;
 
 Software :
->c++;
+>Vs Code ( c++;
 >php;
 >mysql;
 >Html5;
 >css3;
->javascript;
+>javascript;)
+
 >Arduino Software;
-Library:-
+
+Library:
 >ESP8266WiFi;
 >DHT;
 >OneWire;
